@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
     libmecab-dev \
 	gfortran \
     libav-tools \
-    python3-setuptools
+    python3-setuptools \
+    swig
 
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
